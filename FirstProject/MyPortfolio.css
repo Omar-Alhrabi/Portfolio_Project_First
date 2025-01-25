@@ -1,0 +1,680 @@
+*{
+    margin: 0% ;
+    padding: 0%;
+    box-sizing: border-box;
+
+
+}
+body{
+
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+ 
+}
+/* heroSection */
+.navbar{  
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%; 
+    align-items: center;  
+    background-color:lch(9 0 0);     
+}
+.navbar h1{
+    color: aliceblue;
+    font-size: 40PX;
+}
+.navlink li{
+    display: inline-block;  
+    font-size: 30px; 
+    font-family: "Barlow Condensed", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+.navlink > li > a{   
+    padding: 10px 20px;
+    text-decoration: unset;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.navlink > li > a:hover ,
+.navlink > li > a.Active{
+    color: rgb(255, 215, 167);
+}
+.Active{
+    color: rgb(255, 215, 167);
+}
+.navResp{
+    display: none;
+}
+.home{
+    background: /*  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  */
+    url("/FirstProject/pic/WhatsApp\ Image\ 2025-01-24\ at\ 17.21.44_242f99fe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    
+    
+    
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+    font-size: 50px;
+    /* font-weight: 600px; */
+    animation-delay: 0.3s;
+}
+.home-content h3{
+    font-size: 32px;
+    /* font-weight: 700px; */
+    color: rgb(255, 215, 167);
+    margin-top: 10px;
+    animation-delay: 0.5s;
+
+}
+.home-content p{
+    font-size: 20px;
+    margin-top: 10px;
+    animation-delay: 0.7s;
+
+}
+.home-content .btn{
+    width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    animation-delay: 1s;
+
+}
+ .btn a{
+ display: inline-flex;
+ width: 150px;
+ height: 100%; 
+ justify-content: center;
+ align-items: center;
+ background-color:  rgb(255, 215, 167); 
+ border-radius: 10px;
+ border: 2px solid  rgb(255, 215, 167);
+ text-decoration: unset;
+ font-size: 20px;
+ color: black ;
+ font-weight: 600;
+ 
+}
+.icons{
+    position: absolute;
+    bottom: 100px;
+    width: 200px;
+
+   display: flex;
+   justify-content: space-evenly;
+   
+}
+.icons a{
+    color: aliceblue;
+    font-size: 40px;
+    transition: 0.3s ease;
+}
+.icons a:hover{
+    color:  rgb(255, 215, 167);
+    transform: scale(1.05);
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards; 
+}
+@keyframes moveup{
+    100% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+}
+/* AboutSection */
+  .section1{
+    
+    background-color: rgb(255, 215, 167); 
+    padding-bottom: 50px;
+ }
+ .section1 h1{
+     color: black;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0px;
+ }
+
+.container{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+ }
+.Profile-card{
+    background-color: #111;
+    width: 400px;
+    padding: 3em;
+    border-radius: 10px;
+    min-height: 400px;
+    position: relative;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+ }
+ .Profile-card .profile-pic{
+    margin-top:15px ;
+     overflow: hidden;
+ }
+ .Profile-card .profile-pic img{
+    border-radius: 10px;
+ }
+ .Profile-card .profile-details{
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+ }
+.profile-details .intro{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-details .intro h2{
+    margin-top: 20px;
+}
+.profile-details .intro h4{
+ 
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 5px  10px;
+    margin: 10px;
+}
+.profile-details .intro .social{
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+.profile-details .intro .social i{
+  color: rgb(0, 0, 0);
+  background-color: #d1d0d0;
+  font-size: 16px;
+  margin: 5px;
+  height: 35px;
+    width: 35px;
+    line-height:35px ;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.profile-details .intro .social i:hover{
+    transform: scale(1.1);
+    border: 1px solid rgb(255, 215, 167);
+}
+.Profile-card .contact-info{
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+
+}
+.Profile-card .contact-info .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 215, 167);
+    padding: 10px 0;
+    margin-bottom: 10px ;
+
+}
+.contact-info .row .icon{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #111;
+    color: aliceblue;
+    transition: 0.5s;
+
+}
+.row .icon:hover{
+    transform: scale(1.1) ;
+    border: 1px solid rgb(255, 215, 167);
+}
+.row .contact {
+    min-width: 70%;
+}
+.row .contact span{
+    font-size: 12px;
+
+}
+.about{
+    background-color: #111;
+    max-width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+
+}
+.about h1{
+    color: #d1d0d0;
+    margin-bottom: 1.1rem;
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+
+}
+.about h1::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: -50%;
+    width: 45%;
+    height: 3px;
+    background: linear-gradient(45deg , #f6f6f6 , #e21);
+}
+.about h2{
+    color: #d1d0d0;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+.about p{
+    color: #4a4a4a;
+    margin: 1.5rem 0;
+
+}
+.about .work{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+   grid-template-rows: auto; 
+}
+.work .workbox{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid #d1d0d0;
+    padding: 1rem;
+    margin: 1rem;
+     
+}
+.work .workbox .desc{
+    width: 75%;
+    color: #4a4a4a;
+
+}
+.work .workbox .desc h3{
+    color: #d1d0d0;
+    margin-bottom: 3px ;
+    
+}
+
+.work .workbox .desc p{
+   margin: 0px;
+
+}
+/* ServicesSection */
+.section2{
+    background-color: #111;
+    padding-bottom: 50px;
+}
+.container1{
+    padding-top: 130px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container1 h1{
+    font-size: 50px;
+    margin-bottom: 150px;
+  color: rgb(255, 215, 167);
+}
+.CardSrv{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 80px;
+    width: 100vw;
+    justify-content: center;
+    
+}
+.CardSrv .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 215, 167);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #111;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 30px  rgb(255, 215, 167);
+}
+.card1 .btn{
+    width: 110px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #000000;
+    border: 3px outset #000000;
+    color: rgb(255, 215, 167); 
+    transition: 0.5s ease;
+}
+.card1 .btn:hover{
+ 
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card1:hover{
+    transform: scale(1.1);
+}
+.card1 i{
+    font-size: 40px;
+}
+/* projectSection */
+.section3{
+    background-color: rgb(255, 215, 167); 
+    padding-bottom: 50px;
+ }
+ .project{
+    padding-top: 130px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .project h2{
+    font-size: 50px;
+    margin-bottom: 150px;
+    color: #000000;
+}
+.projcard{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 80px;
+    width: 100vw;
+    justify-content: center;
+}
+
+.projOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 0); 
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    color:  rgb(255, 215, 167); 
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 30px  rgb(0, 0, 0);
+}
+.projOne:hover{
+    transform: scale(1.1);
+}
+/* TestimonialSection */
+.section4{
+    background-color: rgb(0, 0, 0);
+     padding-bottom: 50px;
+ }
+ .Testimonial{
+    padding-top: 130px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .Testimonial h2{
+    font-size: 50px;
+    margin-bottom: 150px;
+    color: rgb(255, 215, 167);
+}
+.Teststar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    width: 100vw;
+    justify-content: center;
+}
+
+.persbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 215, 167);
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 30px  rgb(255, 255, 255);
+}
+.persbox img{
+    border-radius: 50%;
+}
+.persbox:hover{
+    transform: scale(1.1);
+}
+.section5{
+    
+        background-color: rgb(255, 215, 167);
+      
+    
+}
+.section5 h1{
+    text-align: center;
+    color: #111;
+    font-size: 50px;
+    padding :100px 0px;
+}
+.logo5{
+    color: black;
+    font-size: 50px;
+}
+.contact-container{
+display: grid;
+grid-template-columns: 1fr 1.3fr;
+gap: 20px;
+padding: 30px;
+
+}
+.contact-box{
+    display: flex;
+    align-self: center;
+    padding: 20px;
+    flex-direction: column;
+    color: #111;
+
+}
+.cont2 .btn{
+   
+        width: 200px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #59ff34;
+         transition: 0.5s ease;
+}
+.cont2 .btn:hover{
+  
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.heading span{
+    color: #59ff34;
+}
+.contact-box .desc1{
+    padding-top: 10px;
+}
+.heading{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.contact-box p{
+    font-size: 20px;
+}
+.contact-box1{
+    margin-bottom: 30px;
+    display: flex;
+    background-color: #000000;
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+.field-box{
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    justify-items: center;
+}
+.cont{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+.cont input{
+    padding: 15px 7px;
+}
+footer{
+    background-color: #000000;
+    width: 100vw;
+    height: 30vh;
+}
+.foot{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fooot{
+    width: 60%;
+    padding: 20px;
+}
+
+.foot1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+.iconsfo{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconsfo a{
+    color: aliceblue;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+.iconsfo a:hover{
+    color:  rgb(255, 215, 167);
+    transform: scale(1.05);
+}
+@media (min-width: 300px) and (max-width: 1024px)
+{
+    .navlink{
+        display: none;
+    }
+    .navResp{
+        display: flex;
+        font-size: 50px;
+        margin-left: 50px;
+    }
+    .section1{
+        height: 100vh;
+    }
+    .about{
+        width: 100%;
+        max-width: 400px;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .about h1{
+        font-size: 2.2rem;
+    }
+    .about .work{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
+    }
+    .section2{
+        height: 100vh;
+    }
+    .container1{
+       display: flex;
+       flex-direction: column;
+       background-color:#111;
+       height: 100%;
+    }
+    .CardSrv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section3{
+        height: 100vh;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 215, 167); 
+        height: 100%;
+    }
+    .projcard{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section4{
+        height: 100vh;
+    }
+    .Testimonial{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 215, 167); 
+        height: 100%;
+    }
+    .Teststar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   .section5{
+    height: 100vh;
+   }
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    .contact-box{
+            grid-template-columns: 1fr;
+        }
+        .contact-box1 .field-box{
+            grid-template-columns: 1fr;
+        }
+}
