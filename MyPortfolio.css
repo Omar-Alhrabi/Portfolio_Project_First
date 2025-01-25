@@ -55,7 +55,7 @@ body{
 }
 .home{
     background: /*  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  */
-    url("/FirstProject/pic/WhatsApp\ Image\ 2025-01-24\ at\ 17.21.44_242f99fe.jpg");
+    url("/pic/WhatsApp\ Image\ 2025-01-24\ at\ 17.21.44_242f99fe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
