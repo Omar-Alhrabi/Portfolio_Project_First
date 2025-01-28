@@ -2,7 +2,8 @@
     margin: 0% ;
     padding: 0%;
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
+    
 
 }
 body{
@@ -209,7 +210,7 @@ body{
     padding: 5px  10px;
     margin: 10px;
 }
-.profile-details .intro .social{
+/* .profile-details .intro .social{
     margin-top: 10px;
     margin-bottom: 25px;
 
@@ -229,7 +230,7 @@ body{
 .profile-details .intro .social i:hover{
     transform: scale(1.1);
     border: 1px solid rgb(255, 215, 167);
-}
+} */
 .Profile-card .contact-info{
     background-color: #111;
     padding: 15px;
@@ -276,8 +277,9 @@ body{
 
 }
 .about h1{
-    color: #d1d0d0;
-    margin-bottom: 1.1rem;
+    color: #ffffff;
+    margin: 0%;
+    padding: 5px;
     position: relative;
     display: inline-block;
     font-size: 3.5rem;
@@ -293,12 +295,12 @@ body{
     background: linear-gradient(45deg , #f6f6f6 , #e21);
 }
 .about h2{
-    color: #d1d0d0;
+    color: #ffffff;
     font-size: 2rem;
     margin: 0.5rem 0;
 }
 .about p{
-    color: #4a4a4a;
+    color: #dbdbdb;
     margin: 1.5rem 0;
 
 }
@@ -344,7 +346,7 @@ body{
 }
 .container1 h1{
     font-size: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
   color: rgb(255, 215, 167);
 }
 .CardSrv{
@@ -403,7 +405,7 @@ body{
  }
  .project h2{
     font-size: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 75px;
     color: #000000;
 }
 .projcard{
@@ -445,7 +447,7 @@ body{
  }
  .Testimonial h2{
     font-size: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
     color: rgb(255, 215, 167);
 }
 .Teststar{
@@ -487,7 +489,7 @@ body{
     text-align: center;
     color: #111;
     font-size: 50px;
-    padding :100px 0px;
+    padding :25px 0px;
 }
 .logo5{
     color: black;
@@ -566,21 +568,17 @@ footer{
     height: 30vh;
 }
 .foot{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.fooot{
-    width: 60%;
-    padding: 20px;
-}
 
+    height: 100%;
+ 
+}
 .foot1{
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 20px;
+    height: 100%;
+    align-items: flex-end;
 }
 .iconsfo{
     width: 20%;
